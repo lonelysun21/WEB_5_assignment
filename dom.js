@@ -17,3 +17,19 @@ colorButton.addEventListener("click", function() {
 fontButton.addEventListener("click", function() {
     styleText.style.fontSize = "24px";
 });
+
+let addButton = document.getElementById("addButton");
+let removeButton = document.getElementById("removeButton");
+let itemList = document.getElementById("itemList");
+
+addButton.addEventListener("click", function() {
+    let item = document.createElement("li");
+    item.textContent = "Item " + (itemList.children.length + 1);
+    itemList.appendChild(item);
+});
+
+removeButton.addEventListener("click", function() {
+    if (itemList.lastElementChild) {
+        itemList.lastElementChild.remove();
+    }
+});

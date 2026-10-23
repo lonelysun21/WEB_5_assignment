@@ -62,3 +62,10 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+#styleBox {
+    background-color: #eeeeee;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
